@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B91C111E-F1B9-4FD9-A3D6-37EE0D0230C4}</ProjectGuid>
+    <RootNamespace>QEngine2Proto1</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;PhysXLoader.lib;NxCooking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dx9.lib;PhysXLoader.lib;NxCooking.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="InputProcessor.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="Logic.cpp" />
+    <ClCompile Include="OBox.cpp" />
+    <ClCompile Include="Obstacle.cpp" />
+    <ClCompile Include="OFinishGate.cpp" />
+    <ClCompile Include="OTree.cpp" />
+    <ClCompile Include="Particle.cpp" />
+    <ClCompile Include="ParticleSystem.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="QuadTreeNode.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="IInput.cpp" />
+    <ClCompile Include="Music.cpp" />
+    <ClCompile Include="OrbitCam.cpp" />
+    <ClCompile Include="Q3DObject.cpp" />
+    <ClCompile Include="QAI.cpp" />
+    <ClCompile Include="QEngine.cpp" />
+    <ClCompile Include="QNetwork.cpp" />
+    <ClCompile Include="QVObject.cpp" />
+    <ClCompile Include="RendererManager.cpp" />
+    <ClCompile Include="SoundsystemManager.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Event.cpp" />
+    <ClCompile Include="Goal.cpp" />
+    <ClCompile Include="cooking.cpp" />
+    <ClCompile Include="ErrorOutputStream.cpp" />
+    <ClCompile Include="QPhysicalObject.cpp" />
+    <ClCompile Include="QPhysics.cpp" />
+    <ClCompile Include="Stream.cpp" />
+    <ClCompile Include="QMath.cpp" />
+    <ClCompile Include="QPlane.cpp" />
+    <ClCompile Include="QVector3.cpp" />
+    <ClCompile Include="ViewFrustum.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Frame.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="InputProcessor.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="Logic.h" />
+    <ClInclude Include="OBox.h" />
+    <ClInclude Include="Obstacle.h" />
+    <ClInclude Include="OFinishGate.h" />
+    <ClInclude Include="OrbitCam.h" />
+    <ClInclude Include="OTree.h" />
+    <ClInclude Include="Particle.h" />
+    <ClInclude Include="ParticleSystem.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="QuadTreeNode.h" />
+    <ClInclude Include="Vehicle.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="IInput.h" />
+    <ClInclude Include="IQGraphics.h" />
+    <ClInclude Include="IQSound.h" />
+    <ClInclude Include="Music.h" />
+    <ClInclude Include="Q3DObject.h" />
+    <ClInclude Include="QAI.h" />
+    <ClInclude Include="QEngine.h" />
+    <ClInclude Include="QNetwork.h" />
+    <ClInclude Include="QVObject.h" />
+    <ClInclude Include="RendererManager.h" />
+    <ClInclude Include="SoundsystemManager.h" />
+    <ClInclude Include="Structures.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="Goal.h" />
+    <ClInclude Include="cooking.h" />
+    <ClInclude Include="ErrorOutputStream.h" />
+    <ClInclude Include="QPhysicalObject.h" />
+    <ClInclude Include="QPhysics.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="QMath.h" />
+    <ClInclude Include="QPlane.h" />
+    <ClInclude Include="QVector3.h" />
+    <ClInclude Include="ViewFrustum.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
