@@ -1,0 +1,4 @@
+LIBRARY	"QGraphicsD3D"
+EXPORTS
+CreateGraphicsSubsystem
+ReleaseGraphicsSubsystem
