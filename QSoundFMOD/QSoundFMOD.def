@@ -1,0 +1,4 @@
+LIBRARY	"QSoundFMOD"
+EXPORTS
+CreateSoundSubsystem
+ReleaseSoundSubsystem
